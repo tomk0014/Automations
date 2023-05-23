@@ -1,0 +1,256 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="869.6,3384.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="TBS Policies, Directives and Guidelines for English and French" sap:VirtualizedContainerService.HintSize="880,3320" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="ExtractURL_EN" />
+      <Variable x:TypeArguments="sd:DataTable" Name="ExtractURL_FR" />
+      <Variable x:TypeArguments="x:String" Name="URL_EN_STRING" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="817.6,3208" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="784,3121.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="721.6,3009.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath=".objects\PolicyInstruments.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="688,2740" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1:E147&quot;)]" SaveAfterEachRow="True">
+                    <ueab:ExcelForEachRowX.Body>
+                      <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                        <ActivityAction.Argument1>
+                          <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                        </ActivityAction.Argument1>
+                        <ActivityAction.Argument2>
+                          <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                        </ActivityAction.Argument2>
+                        <Sequence DisplayName="DO English Policies" sap:VirtualizedContainerService.HintSize="654.4,2555.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="592,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[CurrentRow(&quot;English URL&quot;).ToString]" />
+                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Values and Ethics Code for the Public Sector- Canada.ca" sap:VirtualizedContainerService.HintSize="592,1012.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="825e6679-a777-4096-b894-c3c1b3efe339" Version="V2">
+                            <uix:NApplicationCard.Body>
+                              <ActivityAction x:TypeArguments="x:Object">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,796" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Print-friendly'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="825e6679-a777-4096-b894-c3c1b3efe339" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=25049" CvElementArea="688, 579, 139, 42" CvTextArea="722, 592, 92, 18" CvTextArgument="Print-friendly" CvType="Button" DesignTimeRectangle="690, 582, 136, 37" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Print-friendly'" FullSelectorArgument="&lt;webctrl aaname=' Print-friendly' aria-role='button' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Print-friendly' aria-role='button' tag='A' type='' class='btn btn-default' check:innerText='Print-friendly' /&gt;" Guid="128b4415-1424-4873-8f26-12ea76d0cbdb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIwAAAApCAYAAADnEcFjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOhSURBVHhe7Zy/axRBFID9n/wvrA6E9CLIgW2EYHVEksIQjQExXEid4gIp4omFBEyQNPFAJU2IEfNLE7WKzVXPfbs7ezNv3tzOLDvhznvFR3I7783Mm/l29pJib/X7fRAEX0QYIQhDmOvrv3B2cQlfv53A0fF3YYJBB9AFdEJ3pBAGGzDw7PwHXF79hqtff4QJBh1AF16/eQsnp6e2MGgTBnDJwuSys/sBNjY2bWHwCJKTRaCcX/yEZ89f2MLg44hLEISnC4sijOCPCCMEIcIIQYgwQhDRhHn/sgW3G48YZqD1js8RRp9IwhzAcpOTJePOUo/JEcaBOMIcbsF9RpSCZgf2uTxh5IkizHFniRelYBHWDvlcnc1ZLjdjqn3A5gzITrnyOJP99hxMd/k2HYxTc+Hjq41fiV4HprR5pHOLdFNGEWbYRiuanXM2Vyfthys8X6DaN4MsvBPfuJti3IXpLsywkgxowfwun6vjFCYhyqKIMKXUI0w+4VSG5jrs7W7B4/lVN+09OMacuyqHL65UmMYKbKaft2G6MQfL7ZVcyOT3Hn0kYAwuavazkHd2O2vvqlxynULj0vn5jJ9hnr4YR/tOaiJjWGLq643tbbcw5jop8j9KXDUOoX5hEqZelT0qkgk/HMRXEcZsUxLoC8MLY2xSvjHFhpA71YkV5zO+kkWLoeMrUbSarZx8bLsuXhi2Jt86GaIIE0yoMPnC0kUz72ZeGC6muNN8F9KK8xjf0bdRY1oXOXVIHrsmRDzzkURqVO3WqePH6AvDxSeYC59tmHmNF4aLqUuYYeM7Nynd7Py6/rvCGIvWxMVQYejYtkAhjOcJYzEuwmg1G/gKk41jCUPGp8IY7b41OhBhhghjbbKaS2VhiAyUSCcMkq5lUqfXPIZQuzC2/S7yzcK8ERXGSQVhMhnI95MEY3NLhXGsSZo3iOGEUX1P5+IU1wOJJMxnWLiXfWZ5spPETJgwCWk9uhC0Hw9h1GdaF66jimGFYeKqUI8wlC9ZUYUglAfrsMflEW5cmIRsU0vGrSgMUvSfY+T4CKNdK/oY8n+YIifBErYCcYTJj0g3i7B2xOQJEbFvjirEEUYYPdJTyf4OFYoI899Tz3cXhQgjBCHCCEGIMEIQIowQhAgjBCHCCEGwwsjbGwQO59sb5P0wAofz/TD4BqqPvU9pAFrFJQuTAzqALuDjiH0DFYINaBMeQRgoTC7oALqgy4IYwghCGSKMEEAf/gFkjG3VEIHnagAAAABJRU5ErkJggg==" InformativeScreenshot="0c9c9c129503065fc39476c305a3831f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Values and Ethics Code for the Public Sector- Canada.ca' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target CvElementArea="678, 158, 264, 39" CvTextArea="691, 170, 134, 15" CvTextArgument="Search Canada.ca" CvType="InputBox" DesignTimeRectangle="679, 160, 262, 37" ElementType="InputBox" FriendlyName="'INPUT wb-srch-q'" FullSelectorArgument="&lt;webctrl id='wb-srch-q' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wb-srch-q' tag='INPUT' type='search' class='wb-srch-q form-control' aaname='Search website' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQoAAAApCAYAAADNhGflAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOdSURBVHhe7drbkZtAEIVh5+REHICS4MEpEIRKSWiTII1NQ08szAWmmx56rEXWFvU/fOUyl2Fm3H1AVf71eDxGANhDUABwLUHx+fkJAMKcDb///CUoANQRFABcBAUAF0EBwEVQAHARFABcBAUAF0EBwEVQAHARFABcBAUA17FBMdzG7nIZL6XuNg7WtW9xH/tpTv2Hda7Nvf/J65ukf4PvrBHQjguKjz40ji7Q2Fj9eC+Ovc83giKHYH8Xx+P6uvE2FNe+E0GBFzgsKELDqCaKYnN218E49789GxTDeOtq60vnfsqXBUGBFzgoKPYaySY/4Y03svEzRhT//AUzNectj1M0qv55sN6XgyL+uVzjzTt8LdW/GoZpPBkSaT9qzwjjTV9Z6Sss2zS3twfGNf3VCAr1nNYvoPo+zpw14lQOCoqpWa5dKhj/Z0YswOK6VMhLIRpvxTh+UeC5+EVxGm93MVYOiO04sgmk8OzmLwYjNNMclq+qPPdNuBV70rIHetxlfcV94VkyGDbP2vD2sWGNOJXDgmK2hsVqUzhGA8xC8abCNBtT32c0QLxGHRNiI8k5GUWvlHOzzgvmHNQzqnNf19eyB+a8VPCFa/TarOeXvH1sWSNO5dCgWKWimQo2WosqhonxNgvFuz2uw0cGhby+OvYi//Qojx0cFKXU2Mv8RVCoeaoQKNl7EOfdGsSzsI5lnHoQ+PtYqK0Rp/KioCjkQkoFpIteSsWpii8UvW6AWlDsNvRzQeGPW1IhGcZVz2gJCncPrK+j9bjcpzxOCodwzAmK3fU2rBGn8vqgmJRv5Ja3lfkGbw2K3bGfCwqvscR589p/Dwp/D+KY+18UlbU563H3sWWNOJVjgkI3sRKKXjTJtkjXt5jdALF4i2dYzeY0wNNBsXtNOlcGYaXB5R7sBUXbHphhEsbO11jrTfft7ZOzj01rxKkcExSTavGFApLH47VFo6igqZ2fG2BpHqvZVNPGY+Un+rNBMak0wmbdolFnafz53jwvNyga9yAdWwMlrm99vrEfaX5yjpqzjy1rxKkcFhRBUYSLSuHERljJoi0KL5gbMTXB3ls50WPrRjKf1fQm1POaGOvLb/5sfr5o/IagaNqD4r583fb/UazhEU3P1QET/r4N+fo+NqwRp3JsUAA4JYICgIugAOAiKAC4CAoALoICgIugAOAiKAC4CAoALoICgIugAOAiKAC4CAoArk1QAEANQQHA8Ri/ANLhtP8H1EX0AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='New column 1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='section' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='section' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='section' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="825e6679-a777-4096-b894-c3c1b3efe339" Version="V3">
+                                    <uix:NExtractData.Target>
+                                      <uix:TargetAnchorable DesignTimeRectangle="43, -3892, 940, 3180" DesignTimeScaleFactor="1" FriendlyName="'The Role'" FullSelectorArgument="&lt;webctrl class='pol-cha' tag='DIV' /&gt;" Guid="4a7cfe02-3d29-4637-b121-da9bedea5716" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Values and Ethics Code for the Public Sector' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                    </uix:NExtractData.Target>
+                                  </uix:NExtractData>
+                                  <ui:WriteCsvFile AddHeaders="True" DataTable="[ExtractDataTable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[&quot;D:\UiPathWorkspace\Data_EcoSystem\&quot;+CurrentRow(&quot;Number&quot;).ToString+&quot;. &quot;+CurrentRow(&quot;English Name&quot;).ToString+&quot; &quot;+DateTime.Now().ToString(&quot;yyyy-MM-dd-hh-mm-ss&quot;)+&quot;.csv&quot;]" sap:VirtualizedContainerService.HintSize="433.6,155.2" sap2010:WorkflowViewState.IdRef="WriteCsvFile_2" ShouldQuote="True" />
+                                  <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                </Sequence>
+                              </ActivityAction>
+                            </uix:NApplicationCard.Body>
+                            <uix:NApplicationCard.TargetApp>
+                              <uix:TargetApp Area="-1088, -220, 1096, 1888" BrowserType="Edge" IconBase64="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" InformativeScreenshot="3c9d20f662e040741b0e881bb0aa7514.jpg" Selector="&lt;html app='msedge.exe' title='Values and Ethics Code for the Public Sector- Canada.ca' /&gt;" Title="Values and Ethics Code for the Public Sector- Canada.ca" Url="[CurrentRow(&quot;English URL&quot;).ToString]" />
+                            </uix:NApplicationCard.TargetApp>
+                          </uix:NApplicationCard>
+                          <Sequence DisplayName="DO French Policies" sap:VirtualizedContainerService.HintSize="592,1257.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="529.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[CurrentRow(&quot;French URL&quot;).ToString]" />
+                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Values and Ethics Code for the Public Sector- Canada.ca" sap:VirtualizedContainerService.HintSize="529.6,1012.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="825e6679-a777-4096-b894-c3c1b3efe339" Version="V2">
+                              <uix:NApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,796" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                    <Sequence.Variables>
+                                      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                    </Sequence.Variables>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Version imprimable'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="825e6679-a777-4096-b894-c3c1b3efe339" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://www.tbs-sct.canada.ca/pol/doc-fra.aspx?id=25049" CvTextArgument="Version imprimable" CvType="Text" DesignTimeRectangle="1086, 729, 228, 46" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Version imprimable'" FullSelectorArgument="&lt;webctrl aaname=' Version imprimable' aria-role='button' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Version imprimable' aria-role='button' tag='A' type='' class='btn btn-default' check:innerText='Version imprimable' /&gt;" Guid="ab25f436-95a5-48c5-aa36-601fdbe6f542" ImageBase64="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" InformativeScreenshot="09b3d390a339951fd9376f0ea1dac4fc.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Code de valeurs et d&amp;apos;éthique du secteur public- Canada.ca' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvElementArea="1155, 198, 329, 51" CvTextArea="1171, 213, 257, 18" CvTextArgument="Rechercher dans Canada.ca" CvType="Button" DesignTimeRectangle="1157, 201, 327, 46" ElementType="InputBox" FriendlyName="'INPUT wb-srch-q'" FullSelectorArgument="&lt;webctrl id='wb-srch-q' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wb-srch-q' tag='INPUT' type='search' class='wb-srch-q form-control' aaname='Recherchez le site Web' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='New column 1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='section' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='section' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='section' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="825e6679-a777-4096-b894-c3c1b3efe339" Version="V3">
+                                      <uix:NExtractData.Target>
+                                        <uix:TargetAnchorable DesignTimeRectangle="43, -3892, 940, 3180" DesignTimeScaleFactor="1" FriendlyName="'The Role'" FullSelectorArgument="&lt;webctrl class='pol-cha' tag='DIV' /&gt;" Guid="4a7cfe02-3d29-4637-b121-da9bedea5716" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Values and Ethics Code for the Public Sector' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                      </uix:NExtractData.Target>
+                                    </uix:NExtractData>
+                                    <ui:WriteCsvFile AddHeaders="True" DataTable="[ExtractDataTable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[&quot;D:\UiPathWorkspace\Data_EcoSystem\&quot;+CurrentRow(&quot;Number&quot;).ToString+&quot;. &quot;+CurrentRow(&quot;French Name&quot;).ToString+&quot; &quot;+DateTime.Now().ToString(&quot;yyyy-MM-dd-hh-mm-ss&quot;)+&quot;.csv&quot;]" sap:VirtualizedContainerService.HintSize="433.6,155.2" sap2010:WorkflowViewState.IdRef="WriteCsvFile_3" ShouldQuote="True" />
+                                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </uix:NApplicationCard.Body>
+                              <uix:NApplicationCard.TargetApp>
+                                <uix:TargetApp Area="-1088, -220, 1096, 1888" BrowserType="Edge" IconBase64="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" InformativeScreenshot="3c9d20f662e040741b0e881bb0aa7514.jpg" Selector="&lt;html app='msedge.exe' title='Values and Ethics Code for the Public Sector- Canada.ca' /&gt;" Title="Values and Ethics Code for the Public Sector- Canada.ca" Url="[CurrentRow(&quot;French URL&quot;).ToString]" />
+                              </uix:NApplicationCard.TargetApp>
+                            </uix:NApplicationCard>
+                          </Sequence>
+                        </Sequence>
+                      </ActivityAction>
+                    </ueab:ExcelForEachRowX.Body>
+                  </ueab:ExcelForEachRowX>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>
